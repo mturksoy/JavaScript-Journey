@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+table.table-1 { 
+	table-layout: fixed;
+	width: 750px;
+	border: solid 4px #4444FF;
+}
+
+tr.tr-1{
+	height: 45px;
+}
+
+tr.tr-2{
+	text-align: center;
+	height: 75px;
+}
+
+td{
+	border: solid 2px #555588;
+}
+
+/*.tr1 .table 1 falan farklı classlar oluşturmak için yapıldı. başka tabllelara başka özellikler atamak için...*/
+td.td-1{
+	text-align: center;
+}
+
+button.button-1 {
+	width: 220px;
+	color: #3333EE;
+	font-weight: 900;
+}
+
+button.button-2{
+	background-color: #DDDD00;
+	width: 60%;
+}

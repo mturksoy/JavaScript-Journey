@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>1.7-Siparis v1.3</title>
+	<script type="text/javascript" src="Siparis.js"></script>
+	<link rel="stylesheet" href="Siparis.css">
+</head>
+
+<body onload="sayfayi_yukle();">
+	<table class="table-1">
+		<tr>
+			<td>
+				Ürün
+			</td>
+				
+			<td>
+				<input id="input-1" type="text">
+			</td>	
+		</tr>
+		
+		<tr>
+			<td>
+				Adet
+			</td>
+			
+			<td>
+				<input id="input-2" type="text">
+			</td>	
+		</tr>	
+	
+		<tr class="tr-1">
+			<td class="td-1">
+				<button class = "button-1" onclick="adet_urun_ekle('ADET');"> ...Adet </button>
+			</td>
+			
+			<td class="td-1">
+				<button class="button-1" onclick="adet_urun_ekle('ON');"> 10 Adet </button>
+			</td>	
+		</tr>
+		
+		<tr class="tr-2">
+			<td colspan="2">
+				<p id="p-1"></p>
+			</td>
+		</tr>
+				
+		<tr class="tr-2">
+			<td colspan="2">
+				<button id="button-3" class="button-2" onclick="temizle();">Formu Temizle</button>
+			</td>	
+		</tr>	
+	</table>
+
+</body>
+</html>
