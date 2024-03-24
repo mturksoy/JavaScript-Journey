@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+	background: #8888FF;
+}
+
+table.table-1{
+	width: 450px;
+	table-layout: fixed;
+	border: solid #7777CC 4px;
+}
+
+tr.tr-1{
+	height: 80px;
+	vertical-align: middle;
+}
+
+td.td-1{
+	border: solid #A09999 2px;
+}
+
+td.td-2{
+	text-align: center;
+}
+
+button.button-1{
+	color: #000088;
+	background-color: #DDDD44;
+	height: 45px;
+	width: 60%;
+}
+
+div.div-1{
+	font: oblique;
+	font-weight: 600;
+	font-size: 18px;
+	color: rgb(0,128,128);
+}

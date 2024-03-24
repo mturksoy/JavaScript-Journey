@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+table{
+	bord: 4px #222299 solid;
+}
+
+td{
+	border: 2px #992222 solid;
+}
+
+p{
+	font-size: 18px;
+	font-weight: 500;
+	color: #003333;
+}
