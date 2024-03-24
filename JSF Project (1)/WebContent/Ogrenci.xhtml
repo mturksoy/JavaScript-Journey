@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+	<f:view>
+		<h:form>
+			<h:panelGrid columns="2">
+				Ad:<h:inputText value="#{ogrenciBean.ogrenci1.ad}" />
+				Soyad:<h:inputText value="#{ogrenciBean.ogrenci1.soyad}" />
+				Yas:<h:inputText value="#{ogrenciBean.ogrenci1.yas}" />
+				Cinsiyet: <h:selectOneMenu value="#{ogrenciBean.ogrenci1.cinsiyet}">
+				<f:selectItem itemValue="Erkek"/>
+				<f:selectItem itemValue="Kadın"/>
+				</h:selectOneMenu>
+				Sehir: <h:selectOneMenu value="#{ogrenciBean.ogrenci1.sehir}">
+				<f:selectItem itemValue="Ankara"/>
+				<f:selectItem itemValue="İstanbul"/>
+				<f:selectItem itemValue="Hatay"/>
+				<f:selectItem itemValue="Malatya"/>		
+				</h:selectOneMenu>
+				<h:commandButton action="#{ogrenciBean.gosterVeKaydet()}" value="Kaydet" />	
+			</h:panelGrid>	
+			<h:dataTable value="#{ogrenciBean.listele}" var ="cls">
+				<h:column>
+					<h:outputText value="#{cls.ad}" />
+				</h:column>
+				<h:column>
+					<h:outputText value="#{cls.soyad}" />
+				</h:column>
+				<h:column>
+					<h:outputText value="#{cls.yas}" />
+				</h:column>
+				<h:column>
+					<h:outputText value="#{cls.cinsiyet}" />
+				</h:column>
+				<h:column>
+					<h:outputText value="#{cls.sehir}" />
+				</h:column>
+			</h:dataTable>	
+		</h:form>
+	</f:view>
+</body> 
+</html>
