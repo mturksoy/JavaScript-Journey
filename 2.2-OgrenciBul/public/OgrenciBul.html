@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>2.2 - Öğrenci Bulma v1.0</title>
+	<script type="text/javascript" src="OgrenciBul.js"></script>
+	<link rel="stylesheet" href="OgrenciBul.css">
+	<link rel="icon" href ="../../images/3570060.png">
+</head>
+
+
+<body onload= "alert('merhabaaaa'); sayfaYukle();">
+	<div id="div-1" class ="div-1">
+		<h3>
+			Öğrenciyi Bulalım - Örnekler
+		</h3>
+		<table class = "table_1_css">
+		<tr>
+			<td>
+				<label for="input-1">Öğrenci Numarası:</label>
+			</td>
+			<td>
+				<input id="input-1" type="number">
+			</td>
+			<td>
+				<button id="button-1" type="button" onclick="numaradanBul();">Öğrenci Numarasını Bul</button>
+			</td>
+			<td>
+				<p id="p-1" class="p-1">
+				Aranan Öğrenci Numarası:
+				<span id ="span-1" class="span-1"></span>
+				</p>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<label for="input-2">Öğrenci Sırası: </label>
+			</td>
+			<td>
+				<input id ="input-2" type="number" style="width: 75px;">
+			</td>
+			<td>
+				<button id ="button-2" type="button" onclick="sıradanBul();">Sıra Numaralı Öğrenciyi Bul</button>
+			</td>
+			<td>
+				<p id = "p-1" class="p-1">
+					Aranan Öğrenci:
+					<span id="span-2" class="span-1"></span>
+				</p>
+			</td>
+		</tr>	
+		</table>
+	</div>
+
+</body>
+</html>

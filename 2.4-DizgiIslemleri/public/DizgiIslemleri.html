@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>2.4 - Dizgi İşlemleri Uygulaması v1.0</title>
+	<script type="text/javascript" src="DizgiIslemleri.js"></script>
+	<link rel="stylesheet" href="DizgiIslemleri.css">
+	<link rel="icon" href="../../images/3570060.png">
+</head>
+
+
+<body onload="sayfaYukle('load');">
+	<div>
+		<br>
+		<input id="input-1" type="text" onfocusin="veriGirisiBasladi(this);" onfocusout="veriGirisiBitti(this);">
+		<input id="input-2" type="text" onfocusin="veriGirisiBasladi(this);" onfocusout="veriGirisiBitti(this);">
+		<button type="button" onclick="dizgiIslemleri();">Dizgi İşlemleri</button>
+		<button id="button-2" type="button" onclick="temizle();">Temizle</button>
+		<br>
+		<br>
+		<label for="select-1">Dizgi İşlemini Seçiniz: </label> <!-- üzerine tıklandığında sanki alttaki nesneye tıklanmış gibi olmasını sağlar -->
+		<select id="select-1" onchange="islemSecildi();">
+<!-- 			<optgroup label="Dizgi İşlemleri"> -->
+<!-- 				<option>Uzunluk(Length)</option> -->
+<!-- 				<option>Ekleme (Concetenate)</option> -->
+<!-- 			</optgroup> BU ŞEKİLDE DE EKLENEBİLİR -->
+		</select>
+		<br>
+		<p id="p-1"></p>
+	</div>
+</body>
+</html>

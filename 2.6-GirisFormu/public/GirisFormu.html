@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>2.6 - Giriş Formu Uygulaması v1.0</title>
+		<script type="text/javascript" src="GirisFormu.js"></script>
+		<link rel="stylesheet" href="GirisFormu.css">
+		<link rel="icon" href="../../images/3570060.png">
+	</head>
+	
+	<body onload="sayfaYukle('yukle');">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">
+						Sisteme Giriş
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="tr_1">
+					<td class="td_1">
+						<input id="input-1" type="text" value="Geçiçi bir metin" onfocusin="veriGirisBasladi(this,'#FFFFCC');" onfocusout ="veriGirisBitti(this);" >
+					</td>
+					<td class="td_1">
+						<button id="button-1" type="button" onclick="giris();">(Geçici)</button>
+					</td>
+				</tr>
+				<tr class="tr_1">
+					<td class ="td_1">
+						<label for="uygulamalar">Uygulamayı seçiniz: </label>
+						<select name="uygulamalar" id="select-1">
+								<optgroup label="Birinci İşlem Ailesi">
+									<option value="islem_1.1">İşlem - 1.1</option>
+									<option value="işlem_2.1">İşlem - 2.1</option>
+								</optgroup>
+								<optgroup label="İkinci İşlem Ailesi">
+									<option value="islem_2.1">İşlem - 2.1</option>
+									<option value="İşlem_2.2">İşlem - 2.2</option>
+								</optgroup>
+						</select>
+					</td>
+					<td class="td_1">
+						<button id="button-2" onclick="secilenUygulamayiCalistir();">Deneme Uygulamasını Çalıştır</button>
+					</td>		
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr class="tr_2">
+					<td colspan="2">
+<!-- 					dataset örneği -->
+						<p id="p-1" data-kisa-adi="Denemek ya da denememek..." data-uzun-adi="Deneme iletisi ya da denememe iletisi...">
+						...
+						</p>
+					</td>
+				</tr>
+			</tfoot>	
+		</table>
+	</body>
+</html>

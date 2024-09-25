@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>2.2 - Şehirler Arası Mesafe v1.3</title>
+	<script type="text/javascript" src="SehirMesafe.js"></script>
+	<link rel="stylesheet" href="SehirMesafe.css">
+	<link rel = "icon" href ="../../images/3570060.png">
+</head>
+
+<body onload="sayfaYukle();">
+
+	<table class="tableNormal">
+		<thead>
+			<tr class="tr-1">
+				<th colspan="2" class="th-1">
+					Şehirlerarası Mesafe Uygulaması
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class = "tr-1">
+				<td>
+					<label for="select-1">Birinci Sehir: </label>
+					<select id="select-1" name="sehir_1" onchange="sehirSecildiOrtak();">
+<!-- 						<option value="Adana">Adana</option> manuel ekleme -->
+					</select>
+				</td>
+				<td>
+					<label for="select-2">İkinci Sehir: </label>
+					<select id ="select-2" name=sehir_2 onchange="sehirSecildiOrtak();">
+<!-- 					<option value="Adana">Adana</option> -->
+					
+					</select>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr class = "tr-1">
+				<td colspan="2">
+					<span id ="span-1" class="span-1">İller Arası Mesafe Burada Görüntülenir...</span>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	<br>
+	<br>
+	<div id="div_ana_cizelge" class="div-1">
+		<table id="ana_cizelge" class ="tableGenis">
+		</table>
+		
+	</div>
+
+</body>
+</html>

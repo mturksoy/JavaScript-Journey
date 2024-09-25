@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>2.5 - Olay Nesneleri v1.0</title>
+		<script type="text/javascript" src="OlayNesneleri.js"></script>
+		<link rel="stylesheet" href="OlayNesneleri.css">
+		<link rel="icon" href="../../images/3570060.png">
+	</head>
+
+	<body onload="sayfaYukle();">
+		<h2>
+			JS Nesneleri ve Olayları - 1.0
+		</h2>
+		<label for="table-1" id="label-1" ondblclick="ciftTikla(1);">Örnek Çizelge (çift tıklayınız)</label>
+		<table id="table-1" ondblclick="ciftTikla(2);">
+			<tr>
+				<td>
+					Hücre[0][0]
+				</td>	
+				<td>
+					Hücre[0][1]
+				</td>
+				<td>
+					Hücre[0][2]
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Hücre[1][0]
+				</td>
+				<td>
+					Hücre[1][1]
+				</td>
+				<td>
+					Hücre[2][2]
+				</td>
+			</tr>	
+		</table>
+		<p id="p-1" ondblclick="ciftTikla(3);">Bir paragraf....</p>
+		<div onclick="tarihiGoster(1);">Tarih: <span id="span-1" class="span-1">...</span></div>
+		<div onclick="tarihiGoster(2);">Gün: <span id="span-2" class="span-1">...</span></div>
+		<div onclick="tarihiGoster(3);">Ay: <span id="span-3" class="span-1">...</span></div>
+		<div onclick="tarihiGoster(4);">Haftanın Günü: <span id="span-4" class="span-1">...</span></div>
+		<div onclick="tarihiGoster(5);">Yıl: <span id="span-5" class="span-1">...</span></div>
+		<div onclick="tarihiGoster(6);">Saat: <span id="span-6" class="span-1">...</span></div>
+		<br>
+		<br>
+		<button id="button-1" type="button" onmouseenter="imlecIslemi_1(this, '#FFDDDD');" onmouseleave="imlecIslemi_1(this, '#DDDD22');"
+		onclick="tusTiklandi(this);">
+		Tuş-1
+		</button>
+		<button id="button2" type="button" onmouseenter="imlecIslemi_2(this, '60px');" onmouseleave="imlecIslemi_2(this, '22px');">Tuş-2</button>
+		<button id="button3" type="button" onmouseenter="imlecIslemi_3(this, 'button-A','Buyrun?');" onmouseleave="imlecIslemi_3(this, 'button-B', 'Ürünlerimiz Taze!!!!!');">Tuş-3</button>
+		
+	</body>
+</html>

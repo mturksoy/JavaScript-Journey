@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+table.table-1{
+	border: 5px #AA4444;
+	border-style: solid;
+	width: 750px;
+	table-layout: fixed;
+}
+
+th{
+	border: 4px #CCCC55 solid;
+}
+
+tr.tr_1{
+	height: 60px;
+}
+
+tr tr_2{
+	height: 140px;
+	vertical-align: top;
+	background-color:  #FFFFE4;
+}
+
+td.td_1{
+	border: 2px #5555CC solid;
+	text-align: left;
+}
+
+table.table_2{
+	border: 8px #4444AA;
+	border-style: dashed;
+	table-layout: fixed;
+}

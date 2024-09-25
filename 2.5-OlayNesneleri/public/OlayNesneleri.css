@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+table {
+	border: 4px #222299 solid;
+	width: 500px;
+	table-layout: fixed;
+}
+
+td{
+	border: 2px #992222 solid;
+}
+
+p{
+	font-size:  18px;
+	font-weight: 900;
+	color: #2222AA;
+}
+
+label.label-1{
+	font-family: "Lucida Console";
+	color: #4444AA;
+}
+
+label.label-2{
+	font-family: "Lucida Handwriting" , "Brush Script MT", cursive;
+	font-weight:  900;
+	font-size: 18px;
+	color: #AA4444;
+}
+
+div{
+	border: 4px #CCCCCC solid;
+	width:  500px;
+}
+
+span.span-1{
+	border: 2px #444499 solid;
+	font-size:  20px;
+	font-weight:  900;
+	color: #be1f23;
+}
+
+button.button-A{
+	width:  100px;
+	background-color: #FFFF33;
+	color: #3333EF;
+}
+
+button.button-B{
+	width:  125px;
+	background-color: #AAAACC;
+	color: #FFFF99;
+	font-weight: 900;
+}
+
+button.button-C{
+	background-color: #AAAAAA;
+	border: 7px red solid;
+}

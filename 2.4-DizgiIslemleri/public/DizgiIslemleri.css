@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+div{
+	border-style: solid dotted dashed double;
+	border: solid 5px #2222AA;
+	width: 700px;
+	border-width: 3px;
+	border-color: #993333;
+}
+
+optgroup {
+	color: red;
+	font-size: +5;
+}
+
+option{
+	color: blue;
+}
